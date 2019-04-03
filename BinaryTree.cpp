@@ -41,7 +41,8 @@ vector<int> BinaryTree::preorderTraversal(TreeNode* root) {
 }
 
 TreeNode* BinaryTree::LCA(TreeNode *root, TreeNode *node1, TreeNode *node2)
-{
+{   // 1. 搞清楚每层递归传递什么上去
+    // 2. 如何对于下层return的结果，进行+/-/&&/||等操作再return上去
     if (root == nullptr) return nullptr;
     if (root == node1 || root == node2) return root;
     TreeNode *left = LCA(root->left, node1, node2);

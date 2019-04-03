@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <string>
+#include <vector>
 using namespace std;
 
 class DPSolution {
@@ -18,6 +19,7 @@ public:
     DPSolution();
     ~DPSolution();
     int LCS(const char *s1, const char *s2);
+    int LCSubstring(string A, int n, string B, int m);
 };
 
 #endif /* DPSolution_hpp */
